@@ -10,8 +10,8 @@ logging.basicConfig(level=logging.INFO)
 groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # IMPORTANT: Add bot as Admin to this channel first!
-CHANNEL_ID = "@YourChannelUsername" 
-CHANNEL_URL = "https://t.me/YourChannelUsername"
+CHANNEL_ID = "@Guruaib" 
+CHANNEL_URL = "https://t.me/Guruaib"
 
 # 2. Check Membership Logic
 async def is_subscribed(bot, user_id):
@@ -57,7 +57,7 @@ async def handle_ai(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Memory Management: Initialize user_data if empty
     if "history" not in context.user_data:
         context.user_data["history"] = [
-            {"role": "system", "content": "You are Yes Guru Support. Remember student details and help them."}
+            {"role": "system", "content": "You are Support. Remember student details and help them."}
         ]
 
     # Add user message to history
