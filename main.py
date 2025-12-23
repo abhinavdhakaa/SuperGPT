@@ -70,7 +70,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # 5. Main Execution
 if __name__ == '__main__':
     # Ensure you add 'TELEGRAM_TOKEN' to your Railway Variables
-    TELEGRAM_TOKEN = os.getenv("TELEGRAM_TO8523309348:AAGn795nFi9wMBHEBCAkUav5TO1ffWfa36cKEN")
+    TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
     
     if not TELEGRAM_TOKEN or not GROQ_API_KEY:
         print("CRITICAL ERROR: API Keys are missing in environment variables!")
